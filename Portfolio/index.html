@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Ártico - Portfólio</title>
+    
+    <!-- CSS do Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilo para a transição suave ao desaparecer */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999; /* Garante que fique por cima de tudo */
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Classe adicionada via JS quando a página carregar */
+        .preloader-hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Ártico - Portfólio</title>
+    
+    <!-- FAVICON (LOGO DA ABA DO NAVEGADOR) -->
+    <link rel="icon" type="image/png" href="imagens/minilogo.png">
+    
+    <!-- Link do Bootstrap e outros estilos... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <!-- TELA DE CARREGAMENTO (PRELOADER) -->
+    <!-- d-flex, justify-content-center e align-items-center centralizam na tela toda -->
+    <div id="preloader" class="bg-white d-flex flex-column justify-content-center align-items-center">
+        
+        <!-- Spinner padrão do Bootstrap -->
+        <div class="spinner-border text-danger" style="width: 3.5rem; height: 3.5rem;" role="status">
+            <span class="visually-hidden">Carregando...</span>
+        </div>
+        
+        <!-- Texto opcional abaixo do spinner -->
+        <p class="mt-3 text-muted fw-semibold">Carregando site...</p>
+        
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL DO SEU SITE -->
+
+
+    <!-- JS do Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para esconder o preloader -->
+    <script>
+    window.addEventListener("load", function() {
+        const preloader = document.getElementById("preloader");
+        
+        // Define um tempo de espera de 1 segundo (1000 milissegundos)
+        setTimeout(() => {
+            // Adiciona a classe que faz o efeito de fade-out (suave)
+            preloader.classList.add("preloader-hidden");
+            
+            // Remove o elemento do HTML após a transição terminar (500ms depois)
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 500);
+            
+        }, 1000); // <-- Altere este valor se quiser mais ou menos tempo (em milissegundos)
+    });
+</script>
+</body>
+</html>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Ártico - Portfólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item {
+            height: 95vh;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold " href="#">Victor Ártico.dev</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse " data-bs-target="#menu" >
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="menu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Tempo de 3 segundos para cada imagem -->
+    <div id="carouselPortfolio"
+     class="carousel slide carousel-fade"
+     data-bs-ride="carousel"
+     data-bs-interval="3000">
+
+    <!-- Indicadores para escolher as imagens -->
+    <div class="carousel-indicators">
+        <button type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="0"
+                class="active"></button>
+
+        <button type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="1"></button>
+
+        <button type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Imagens do carrossel com proporções fixas-->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active" style="height: 800px;">
+            <img src="imagens/bemvindo.png"
+                class="d-block w-100 h-100"
+                style="object-fit: cover;"
+                alt="Slide 1">
+        </div>
+
+        <div class="carousel-item " style="height: 800px;">
+            <img src="imagens/s1.png"
+                class="d-block w-100 h-100"
+                style="object-fit: cover;"
+                alt="Slide 2">
+        </div>
+
+        <div class="carousel-item " style="height: 800px;">
+            <img src="imagens/s2.png"
+                class="d-block w-100 h-100"
+                style="object-fit: cover;"
+                alt="Slide 3">
+        </div>
+
+
+    </div>
+
+    <!-- Botão imagem anterior -->
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselPortfolio"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <!-- Botão próxima imagem -->
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselPortfolio"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+
+<!-- Imagem de perfil em formato gif -->
+    <section id="perfil" class="bg-white min-vh-100 d-flex align-items-center py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4 text-center">
+                    <img src="imagens/gif.gif" alt="Foto de perfil"
+                        class="profile-img rounded-circle border border-4 border-danger shadow img-fluid mb-3">
+
+                    <h4 class="fw-bold mt-3 mb-1">Victor Ártico</h4>
+                    <p class="text-muted mb-2">Desenvolvimento de Sistemas</p>
+                    <span class="badge bg-danger px-3 py-2">Portfólio Acadêmico</span>
+                </div>
+
+                <div class="col-lg-8">
+                    <p class="text-uppercase text-black fw-semibold mb-2">Desenvolvimento de Sistemas</p>
+                    <h2 class="text-danger fw-bold mb-3">Perfil Profissional</h2>
+
+                    <p class="fs-5 text-secondary">
+                        Sou estudante da área de tecnologia com foco em desenvolvimento web, interfaces responsivas
+                        e construção de soluções digitais. Tenho interesse em projetos front-end, organização visual
+                        e uso de boas práticas no desenvolvimento.
+                    </p>
+
+                    <!-- Card 1: Área de interesse com fundo personalizado via style:  Fundo cinza bem clarinho  -->
+                    <div class="row mt-4 g-3">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100"style="background-color: #d7d7d7;">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-2">Localização</h6>
+                                    <p class="text-muted mb-0">São Paulo/SP</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Área de interesse com fundo personalizado via style:  Fundo cinza bem clarinho  -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100" style="background-color: #d7d7d7;"> 
+                            <div class="card-body">
+                                <h6 class="fw-bold mb-2">Área de interesse</h6>
+                                <p class="text-muted mb-0">Desenvolvimento Web</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Área de interesse com fundo personalizado via style:  Fundo cinza bem clarinho  -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100" style="background-color: #d7d7d7;">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-2">Formação</h6>
+                                    <p class="text-muted mb-0">Desenvolvimento de Sistemas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Área de interesse com fundo personalizado via style:  Fundo cinza bem clarinho  -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100"style="background-color: #d7d7d7;">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-2">Objetivo</h6>
+                                    <p class="text-muted mb-0">Criar interfaces modernas e projetos digitais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-4">
+                        <h5 class="fw-semibold mb-3">Tecnologias e ferramentas</h5>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm h-100" style="background-color: #d7d7d7;">
+                                    <div class="card-body">
+
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <i class="devicon-html5-plain colored fs-2"></i>
+                                            <div>
+                                                <div class="fw-semibold">HTML5</div>
+                                                <small class="text-muted">Estrutura</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <i class="devicon-css3-plain colored fs-2"></i>
+                                            <div>
+                                                <div class="fw-semibold">CSS3</div>
+                                                <small class="text-muted">Estilo</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3">
+                                            <i class="devicon-bootstrap-plain colored fs-2"></i>
+                                            <div>
+                                                <div class="fw-semibold">Bootstrap</div>
+                                                <small class="text-muted">Layout</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm h-100"style="background-color: #d7d7d7;">
+                                    <div class="card-body">
+
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <i class="devicon-python-plain colored fs-2"></i>
+                                            <div>
+                                                <div class="fw-semibold">Python</div>
+                                                <small class="text-muted">Algoritmos</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <i class="devicon-github-original fs-2"></i>
+                                            <div>
+                                                <div class="fw-semibold">GitHub</div>
+                                                <small class="text-muted">Repositórios</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3">
+                                            <i class="devicon-vscode-plain colored fs-2"></i>
+                                            <div>
+                                                <div class="fw-semibold">VS Code</div>
+                                                <small class="text-muted">Ambiente de desenvolvimento</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projetos" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="text-danger fw-bold">Meus Projetos</h2>
+                <p class="text-muted mb-0">
+                    Alguns dos projetos e atividades feitos para o curso, que representam minha evolução na área de Desenvolvimento de Sistemas.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        <img src="imagens/perfil2.png" class="card-img-top project-img" alt="Portfólio Pessoal">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Portfólio Pessoal</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Apresentação do meu perfil profissional em Desenvolvimento de Sistemas e projetos
+                                realizados.
+                            </p>
+                            <a href="https://github.com/victorartico" class="btn btn-outline-danger mt-auto">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Link clicavel  --> 
+                
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        <img src="imagens/energia2.jpg" class="card-img-top project-img" alt="Projeto Consumo de Energia">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projeto Consumo de Energia</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Aplicação desenvolvida em Python usando o VSCode com foco em calcular o consumo elétrico mensal de
+                                 um aparelho eletrodoméstico e estimar seu custo na conta de luz.
+                            </p>
+                            <a href="https://github.com/victorartico/consumo-de-energia"
+                             class="btn btn-outline-danger mt-auto">Ver projeto</a>
+                        </div>
+
+
+                       <!-- Link clicavel  --> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        <img src="imagens/agua2.jpg" class="card-img-top project-img" alt="Projeto Consumo de Água">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projeto Consumo de Água</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Aplicação desenvolvida em Python usando o VSCode com foco em calcular o controle de água de 
+                                acordo com o tipo de imóvel e emitir um alerta educativo aos moradores.
+                            </p>
+                            <a href="https://github.com/victorartico/Victor_Artico_Ag7_DS_I/tree/main/consumo-agua"
+                             class="btn btn-outline-danger mt-auto">Ver projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="min-vh-100 d-flex align-items-center py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="text-danger fw-bold">Contato</h2>
+                <p class="text-muted">Aberto a oportunidades, projetos e conexões na área de tecnologia. <br>
+                    Clique no botão inferior esquerdo da tela para entrar em contato direto comigo.
+            </div>
+
+
+<!-- BOTÃO FLUTUANTE DO WHATSAPP, clicavel com meu numero Real-->
+<a href="https://wa.me/5512996159069?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20entrar%20em%20contato!" 
+   target="_blank" 
+   class="btn btn-success rounded-circle shadow d-flex align-items-center justify-content-center" 
+   style="position: fixed; bottom: 25px; left: 25px; width: 60px; height: 60px; z-index: 9999;"
+   title="Fale comigo no WhatsApp">
+    
+    <!-- Ícone SVG Oficial do WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp text-white" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.601 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.558 6.558 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.115-.198-.013-.304.087-.403.089-.088.197-.232.296-.348.1-.113.133-.197.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+    </svg>
+</a>
+
+
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 rounded-4 p-4 text-center">
+                        <h4 class="fw-bold mb-3">Fale comigo</h4>
+                        <p class="text-muted mb-4">
+                            Estou em constante aprendizado e disponível para trocar ideias, compartilhar projetos
+                            e construir novas conexões profissionais.
+                        </p>
+                        <div class="d-grid gap-3">
+                            <a href="mailto:joao@email.com" class="btn btn-outline-danger btn-lg">Enviar e-mail</a>
+                            <a href="https://github.com/victorartico" target="_blank" class="btn btn-dark btn-lg">GitHub</a>
+                            <a href="https://linkedin.com/" target="_blank" class="btn btn-danger btn-lg">LinkedIn</a>
+                        </div>
+                        <hr class="my-4">
+                        <p class="text-muted mb-0">
+                            <span class="fw-semibold">Localização:</span> São Paulo/SP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltar ao Topo - Bootstrap</title>
+    
+    <!-- CSS do Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilo para fixar o botão no canto inferior direito e começar oculto */
+        #btnTopo {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 9999;
+            display: none; /* Fica escondido até rolar a página */
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+        
+    <!-- BOTÃO VOLTAR AO TOPO (UTILIZANDO CLASSES DO BOOTSTRAP) -->
+    <button type="button" class="btn btn-danger rounded-circle shadow d-flex align-items-center justify-content-center p-0" id="btnTopo" title="Voltar ao topo">
+        <!-- Ícone de seta para cima em SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
+
+    <!-- JS do Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SCRIPT PARA CONTROLAR A APARIÇÃO E A ROLAGEM SUAVE -->
+    <script>
+        const btnTopo = document.getElementById("btnTopo");
+
+        // Mostra ou esconde o botão dependendo da rolagem da página
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 300) { // Aparece após rolar 300 pixels
+                btnTopo.style.display = "flex";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        });
+
+        // Faz a página subir suavemente ao clicar no botão
+        btnTopo.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2026 - Portfólio Profissional</p>
+            <small>Desenvolvido com HTML, CSS e Bootstrap</small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
